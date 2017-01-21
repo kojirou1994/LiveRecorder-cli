@@ -12,7 +12,29 @@
 		E37507751E2E2AAA00868F2F /* LiveRecorder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E37507731E2E2AAA00868F2F /* LiveRecorder.xcdatamodeld */; };
 		E37507771E2E2AAA00868F2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E37507761E2E2AAA00868F2F /* Assets.xcassets */; };
 		E375077A1E2E2AAA00868F2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37507781E2E2AAA00868F2F /* Main.storyboard */; };
+		E375078D1E2E33E200868F2F /* LiveStreamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E375078C1E2E33E200868F2F /* LiveStreamer.swift */; };
+		E37507921E2E460100868F2F /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E375078F1E2E460100868F2F /* JSON.swift */; };
+		E37507931E2E460100868F2F /* LogOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37507901E2E460100868F2F /* LogOutput.swift */; };
+		E37507941E2E460100868F2F /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37507911E2E460100868F2F /* String+Extension.swift */; };
+		E37507961E2E652300868F2F /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37507951E2E652300868F2F /* WindowController.swift */; };
+		E3ED32C51E2F406E00AD90AB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED32C41E2F406E00AD90AB /* main.swift */; };
+		E3ED32C91E2F74E100AD90AB /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E375078F1E2E460100868F2F /* JSON.swift */; };
+		E3ED32CA1E2F74E300AD90AB /* LogOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37507901E2E460100868F2F /* LogOutput.swift */; };
+		E3ED32CB1E2F74E600AD90AB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37507911E2E460100868F2F /* String+Extension.swift */; };
+		E3ED32CC1E2F74EA00AD90AB /* LiveStreamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E375078C1E2E33E200868F2F /* LiveStreamer.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E3ED32C01E2F406E00AD90AB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E375076C1E2E2AAA00868F2F /* LiveRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +44,25 @@
 		E37507761E2E2AAA00868F2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E37507791E2E2AAA00868F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E375077B1E2E2AAA00868F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E37507831E2E2C9500868F2F /* LiveRecorder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LiveRecorder.entitlements; sourceTree = "<group>"; };
+		E375078C1E2E33E200868F2F /* LiveStreamer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveStreamer.swift; sourceTree = "<group>"; };
+		E375078F1E2E460100868F2F /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		E37507901E2E460100868F2F /* LogOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogOutput.swift; sourceTree = "<group>"; };
+		E37507911E2E460100868F2F /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		E37507951E2E652300868F2F /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		E3ED32C21E2F406E00AD90AB /* LiveRecorder-cli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LiveRecorder-cli"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3ED32C41E2F406E00AD90AB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E37507691E2E2AAA00868F2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3ED32BF1E2F406E00AD90AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				E375076E1E2E2AAA00868F2F /* LiveRecorder */,
+				E3ED32C31E2F406E00AD90AB /* LiveRecorder-cli */,
 				E375076D1E2E2AAA00868F2F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				E375076C1E2E2AAA00868F2F /* LiveRecorder.app */,
+				E3ED32C21E2F406E00AD90AB /* LiveRecorder-cli */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +93,36 @@
 		E375076E1E2E2AAA00868F2F /* LiveRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				E37507831E2E2C9500868F2F /* LiveRecorder.entitlements */,
+				E375078E1E2E45D300868F2F /* Libs */,
 				E375076F1E2E2AAA00868F2F /* AppDelegate.swift */,
 				E37507711E2E2AAA00868F2F /* ViewController.swift */,
+				E37507951E2E652300868F2F /* WindowController.swift */,
+				E375078C1E2E33E200868F2F /* LiveStreamer.swift */,
 				E37507761E2E2AAA00868F2F /* Assets.xcassets */,
 				E37507781E2E2AAA00868F2F /* Main.storyboard */,
 				E375077B1E2E2AAA00868F2F /* Info.plist */,
 				E37507731E2E2AAA00868F2F /* LiveRecorder.xcdatamodeld */,
 			);
 			path = LiveRecorder;
+			sourceTree = "<group>";
+		};
+		E375078E1E2E45D300868F2F /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				E375078F1E2E460100868F2F /* JSON.swift */,
+				E37507901E2E460100868F2F /* LogOutput.swift */,
+				E37507911E2E460100868F2F /* String+Extension.swift */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		E3ED32C31E2F406E00AD90AB /* LiveRecorder-cli */ = {
+			isa = PBXGroup;
+			children = (
+				E3ED32C41E2F406E00AD90AB /* main.swift */,
+			);
+			path = "LiveRecorder-cli";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +145,23 @@
 			productReference = E375076C1E2E2AAA00868F2F /* LiveRecorder.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E3ED32C11E2F406E00AD90AB /* LiveRecorder-cli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3ED32C81E2F406E00AD90AB /* Build configuration list for PBXNativeTarget "LiveRecorder-cli" */;
+			buildPhases = (
+				E3ED32BE1E2F406E00AD90AB /* Sources */,
+				E3ED32BF1E2F406E00AD90AB /* Frameworks */,
+				E3ED32C01E2F406E00AD90AB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LiveRecorder-cli";
+			productName = "LiveRecorder-cli";
+			productReference = E3ED32C21E2F406E00AD90AB /* LiveRecorder-cli */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +173,16 @@
 				ORGANIZATIONNAME = Putotyra;
 				TargetAttributes = {
 					E375076B1E2E2AAA00868F2F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = W3LXES65B7;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					E3ED32C11E2F406E00AD90AB = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = W3LXES65B7;
 						ProvisioningStyle = Automatic;
@@ -115,6 +203,7 @@
 			projectRoot = "";
 			targets = (
 				E375076B1E2E2AAA00868F2F /* LiveRecorder */,
+				E3ED32C11E2F406E00AD90AB /* LiveRecorder-cli */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +226,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				E37507721E2E2AAA00868F2F /* ViewController.swift in Sources */,
+				E37507941E2E460100868F2F /* String+Extension.swift in Sources */,
+				E37507921E2E460100868F2F /* JSON.swift in Sources */,
 				E37507701E2E2AAA00868F2F /* AppDelegate.swift in Sources */,
+				E375078D1E2E33E200868F2F /* LiveStreamer.swift in Sources */,
+				E37507961E2E652300868F2F /* WindowController.swift in Sources */,
 				E37507751E2E2AAA00868F2F /* LiveRecorder.xcdatamodeld in Sources */,
+				E37507931E2E460100868F2F /* LogOutput.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3ED32BE1E2F406E00AD90AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3ED32CB1E2F74E600AD90AB /* String+Extension.swift in Sources */,
+				E3ED32C51E2F406E00AD90AB /* main.swift in Sources */,
+				E3ED32CC1E2F74EA00AD90AB /* LiveStreamer.swift in Sources */,
+				E3ED32C91E2F74E100AD90AB /* JSON.swift in Sources */,
+				E3ED32CA1E2F74E300AD90AB /* LogOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +380,24 @@
 			};
 			name = Release;
 		};
+		E3ED32C61E2F406E00AD90AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = W3LXES65B7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E3ED32C71E2F406E00AD90AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = W3LXES65B7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -291,6 +415,15 @@
 			buildConfigurations = (
 				E375077F1E2E2AAA00868F2F /* Debug */,
 				E37507801E2E2AAA00868F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3ED32C81E2F406E00AD90AB /* Build configuration list for PBXNativeTarget "LiveRecorder-cli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3ED32C61E2F406E00AD90AB /* Debug */,
+				E3ED32C71E2F406E00AD90AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

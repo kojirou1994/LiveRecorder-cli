@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Active Streamer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>LiveRecorder-cli.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>LiveRecorder.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +23,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>E375076B1E2E2AAA00868F2F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E3ED32C11E2F406E00AD90AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
