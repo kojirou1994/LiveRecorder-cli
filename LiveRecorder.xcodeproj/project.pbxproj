@@ -45,10 +45,10 @@
 		E37507791E2E2AAA00868F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E375077B1E2E2AAA00868F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E37507831E2E2C9500868F2F /* LiveRecorder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LiveRecorder.entitlements; sourceTree = "<group>"; };
-		E375078C1E2E33E200868F2F /* LiveStreamer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveStreamer.swift; sourceTree = "<group>"; };
-		E375078F1E2E460100868F2F /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
-		E37507901E2E460100868F2F /* LogOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogOutput.swift; sourceTree = "<group>"; };
-		E37507911E2E460100868F2F /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		E375078C1E2E33E200868F2F /* LiveStreamer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveStreamer.swift; path = Sources/LiveStreamer.swift; sourceTree = SOURCE_ROOT; };
+		E375078F1E2E460100868F2F /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = ../Sources/JSON.swift; sourceTree = "<group>"; };
+		E37507901E2E460100868F2F /* LogOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogOutput.swift; path = ../Sources/LogOutput.swift; sourceTree = "<group>"; };
+		E37507911E2E460100868F2F /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "../Sources/String+Extension.swift"; sourceTree = "<group>"; };
 		E37507951E2E652300868F2F /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		E3ED32C21E2F406E00AD90AB /* LiveRecorder-cli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LiveRecorder-cli"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3ED32C41E2F406E00AD90AB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -94,8 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				E37507831E2E2C9500868F2F /* LiveRecorder.entitlements */,
-				E375078E1E2E45D300868F2F /* Libs */,
 				E375076F1E2E2AAA00868F2F /* AppDelegate.swift */,
+				E3CB0CA11E5368A000338A0B /* Libs */,
 				E37507711E2E2AAA00868F2F /* ViewController.swift */,
 				E37507951E2E652300868F2F /* WindowController.swift */,
 				E375078C1E2E33E200868F2F /* LiveStreamer.swift */,
@@ -107,14 +107,14 @@
 			path = LiveRecorder;
 			sourceTree = "<group>";
 		};
-		E375078E1E2E45D300868F2F /* Libs */ = {
+		E3CB0CA11E5368A000338A0B /* Libs */ = {
 			isa = PBXGroup;
 			children = (
 				E375078F1E2E460100868F2F /* JSON.swift */,
 				E37507901E2E460100868F2F /* LogOutput.swift */,
 				E37507911E2E460100868F2F /* String+Extension.swift */,
 			);
-			path = Libs;
+			name = Libs;
 			sourceTree = "<group>";
 		};
 		E3ED32C31E2F406E00AD90AB /* LiveRecorder-cli */ = {
@@ -122,7 +122,8 @@
 			children = (
 				E3ED32C41E2F406E00AD90AB /* main.swift */,
 			);
-			path = "LiveRecorder-cli";
+			name = "LiveRecorder-cli";
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,6 +361,7 @@
 				DEVELOPMENT_TEAM = W3LXES65B7;
 				INFOPLIST_FILE = LiveRecorder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Putotyra.LiveRecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -374,6 +376,7 @@
 				DEVELOPMENT_TEAM = W3LXES65B7;
 				INFOPLIST_FILE = LiveRecorder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Putotyra.LiveRecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -384,6 +387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = W3LXES65B7;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -393,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = W3LXES65B7;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -426,6 +431,7 @@
 				E3ED32C71E2F406E00AD90AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
